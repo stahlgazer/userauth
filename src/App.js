@@ -1,12 +1,12 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 import Login from "./components/Login"
 import Logout from "./components/Logout"
 import Profile from "./components/Profile"
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Login />
       <Logout />
       <Profile />
