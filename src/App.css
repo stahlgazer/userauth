@@ -11,12 +11,32 @@
   background-color: black;
 }
 
-.App .loginbutton,
-.App .logoutbutton {
+.App .container {
+  background-color: #242424;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  /* or absolute */
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.App .container .loginbutton,
+.App .container .logoutbutton {
+  background-image: -webkit-gradient(linear, left top, right top, from(#25aae1), color-stop(#40e495), color-stop(#30dd8a), to(#2bb673));
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
   width: 200px;
   font-size: 16px;
   font-weight: 600;
-  color: #4d4d4d;
+  color: white;
   cursor: pointer;
   margin: 20px;
   height: 55px;
@@ -28,8 +48,8 @@
   transition: all .4s ease-in-out;
 }
 
-.App .loginbutton:hover,
-.App .logoutbutton:hover {
+.App .container .loginbutton:hover,
+.App .container .logoutbutton:hover {
   background-position: 100% 0;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
