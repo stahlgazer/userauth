@@ -1,4 +1,5 @@
 # Auth0 user registration/login template guide and setup for React.js
+View live demo: https://userauth-khaki.vercel.app/
 
 ## Step1 - install auth0 dependency
 ```js
